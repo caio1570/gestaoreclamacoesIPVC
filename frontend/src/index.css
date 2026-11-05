@@ -52,7 +52,7 @@
 
 body {
   margin: 0;
-  background-color:#fff;
+  background-color:#f5f7fa;
 }
 
 #root {
@@ -122,14 +122,15 @@ code {
 }
 
 .titulo {
-  font-size: 67px;
+  font-size: 44px;
   color: rgb(0, 0, 0);
 }
 .inputlogin{
-  background-color:#fff;
+  background-color:#ffffff;
   border: 1px solid #494949;
   padding: 8px 20px;
   border-radius: 4px;
+  color:#000
 }
 .botaologin{
   background-color:#000;
@@ -140,5 +141,109 @@ code {
   
 }
 .botaologin:hover{
-  background-color:#494949;
+  background-color:#0611af;
+}
+.logincard{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 32px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-actions {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+.home-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 32px;
+  width: 360px;
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.home-header {
+  font-size: 38px;
+  font-weight: 600;
+  color: #111827;
+  padding: 28px 0 20px;
+}
+
+.home h2 {
+  color: #1f2937;
+}
+
+.home p {
+  color: #6b7280;
+}
+
+.home-card h3 {
+  color: #1f2937;
+  font-size: 22px;
+}
+
+.home-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #1d4ed8;
+}
+
+.stats-card {
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 30px;
+  padding: 24px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.estados {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.estados strong {
+  color: #1f2937;
+}
+
+.estados p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.estado-item {
+  flex: 1;
+  padding: 12px;
 }
