@@ -1,4 +1,9 @@
+import { useNavigate } from 'react-router-dom';
+
+
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <header className="home-header">
@@ -19,13 +24,20 @@ const Home = () => {
           <div className="home-card">
             <h3>Nova ocorrência</h3>
             <p>Crie uma nova sugestão ou reclamação.</p>
-            <button className="home-button">Criar ocorrência</button>
+            <button className="home-button" onClick={() => navigate('/ocorrencias/nova')}>
+            Criar ocorrência
+            </button>
           </div>
 
           <div className="home-card">
             <h3>As minhas ocorrências</h3>
             <p>Consulte as ocorrências que já submeteu.</p>
-            <button className="home-button">Consultar ocorrências</button>
+            <button
+  className="home-button"
+  onClick={() => navigate('/ocorrencias')}
+>
+  Consultar ocorrências
+</button>
           </div>
         </div>
 
