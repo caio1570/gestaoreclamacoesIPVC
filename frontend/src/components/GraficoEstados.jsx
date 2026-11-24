@@ -1,16 +1,20 @@
 import {
   Chart as ChartJS,
-  ArcElement,
+  CategoryScale,
+  LinearScale,
+  BarElement,
   Tooltip,
-  Legend
+  Legend,
 } from 'chart.js'
 
-import { Pie } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 
 ChartJS.register(
-  ArcElement,
+  CategoryScale,
+  LinearScale,
+  BarElement,
   Tooltip,
-  Legend
+  Legend,
 )
 
 const GraficoEstados = () => {
@@ -27,7 +31,7 @@ const GraficoEstados = () => {
     datasets: [
       {
         label: 'Ocorrências',
-        data: [12, 8, 5, 14, 7]
+        data: [67,69, 44, 29, 12]
       }
     ]
   }
@@ -36,7 +40,7 @@ const GraficoEstados = () => {
     <div>
       <h3>Ocorrências por estado</h3>
 
-      <Pie data={data} />
+      <Bar data={data} />
     </div>
   )
 }
