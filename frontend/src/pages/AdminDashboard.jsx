@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import GraficoEstados from '../components/GraficoEstados'
+
 
 import {
   clearCurrentUser,
@@ -48,11 +50,11 @@ const AdminDashboard = () => {
     <div className="admin-page">
 
       <header className="home-header">
-
+<title>Dashboard</title>
         <span>
           Painel de Administração
         </span>
-
+        <GraficoEstados/>
 
         <div className="header-actions">
 
