@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import image from '../assets/logo-ipvc.png'
+
 
 import {
   setCurrentUser,
@@ -101,6 +103,8 @@ const Login = () => {
       <h1 className="titulo">
         UniPVC Reclamações e Sugestões
       </h1>
+          
+
 
 
       <div className="logincard">
@@ -160,7 +164,11 @@ const Login = () => {
         </form>
 
       </div>
+<img src={image} 
+  alt="Logo UniPVC" 
+  className="login-logo"
 
+/>
     </div>
   )
 }

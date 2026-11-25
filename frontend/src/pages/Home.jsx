@@ -23,7 +23,7 @@ const Home = () => {
     <div>
 
       <header className="home-header">
-
+<title>Home</title>
         <span>
           UniPVC Reclamações e Sugestões
         </span>
