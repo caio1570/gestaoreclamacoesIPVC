@@ -1,5 +1,7 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import connectDB from './config/database.js';
 
 const app = express();
 
@@ -10,6 +12,14 @@ app.get('/health', (req, res) => {
     res.json({ mensagem: 'Backend a funcionar!' });
 });
 
-app.listen(3000, () => {
-    console.log('Servidor iniciado na porta 3000');
-});
+const PORT = process.env.PORT || 3000;
+
+const startServer = async () => {
+    await connectDB();
+
+    app.listen(PORT, () => {
+        console.log(`Servidor iniciado na porta ${PORT}`);
+    });
+};
+
+startServer();
